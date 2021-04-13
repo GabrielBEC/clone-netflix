@@ -1,3 +1,12 @@
+//Gerando itens do carrosel
+for (let i = 1; i <= 10; i++) {
+    document.getElementById("carrosel").innerHTML += `
+    <div class="item">
+        <img class="box-filme" src="img/min${i}.jpg" alt="">
+    </div>
+    `
+}
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
